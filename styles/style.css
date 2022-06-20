@@ -171,6 +171,11 @@ strong {
         inset -4px 4px 4px rgba(0, 0, 0, 0.15),
         inset 4px -4px 4px rgba(0, 0, 0, 0.15),
         inset -4px -4px 4px rgba(0, 0, 0, 0.15);
+    text-shadow:
+        4px 4px 4px rgba(0, 0, 0, 0.15),
+        -4px 4px 4px rgba(0, 0, 0, 0.15),
+        4px -4px 4px rgba(0, 0, 0, 0.15),
+        -4px -4px 4px rgba(0, 0, 0, 0.15);
 }
 /*Про нас*/
 .main__about {
@@ -323,19 +328,13 @@ strong {
     margin: 0;
 }
 
-.footer__logo {
+.header__navigation__logo.footer__logo {
     display: inline-block;
-    font-family: 'Oleo Script', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 36px;
-    letter-spacing: 0.03em;
     color: #FFFFFF;
-    transition: all 0.5s;
+
 }
 
-.footer__logo:hover {
+.header__navigation__logo.footer__logo:hover {
     transform: scale(1.3);
 }
 
@@ -355,19 +354,17 @@ strong {
     color: #FFFFFF;
 }
 
-.footer__email,
-.footer__telephone {
-    font-style: normal;
+.header__email.footer__email,
+.header__telephone.footer__telephone {
     font-weight: 400;
-    font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-    cursor: pointer;
+
 }
 
-.footer__email:hover,
-.footer__telephone:hover {
+.header__email.footer__email:hover,
+.header__telephone.footer__telephone:hover {
     font-weight: bold;
     color: #2196F3;
 }
