@@ -35,7 +35,7 @@ ul {
     padding: 0;
 }
 
-strong {
+.header__navigation__logo__prefix {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     line-height: 31px;
@@ -152,8 +152,17 @@ strong {
 .main__order__button {
     width: 200px;
     height: 50px;
-    background: #2196F3;
+    /*background: #2196F3;*/
+    background:
+        linear-gradient(
+            #2196F3,
+            #104970);
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+    /*text-shadow:*/
+    /*        4px 4px 4px rgba(0, 0, 0, 0.15),*/
+    /*        -4px 4px 4px rgba(0, 0, 0, 0.15),*/
+    /*        4px -4px 4px rgba(0, 0, 0, 0.15),*/
+    /*        -4px -4px 4px rgba(0, 0, 0, 0.15);*/
     border: 0;
     border-radius: 4px;
     font-style: normal;
@@ -167,6 +176,11 @@ strong {
     cursor: pointer;
 }
 
+.main__order__button:focus {
+    background-color: #188ce8;
+    color: #FFFFFF;
+}
+
 .main__order__button:active {
     box-shadow:
         inset 4px 4px 4px rgba(0, 0, 0, 0.15),
@@ -174,10 +188,15 @@ strong {
         inset 4px -4px 4px rgba(0, 0, 0, 0.15),
         inset -4px -4px 4px rgba(0, 0, 0, 0.15);
     text-shadow:
-        4px 4px 4px rgba(0, 0, 0, 0.15),
-        -4px 4px 4px rgba(0, 0, 0, 0.15),
-        4px -4px 4px rgba(0, 0, 0, 0.15),
-        -4px -4px 4px rgba(0, 0, 0, 0.15);
+            4px 4px 4px rgba(0, 0, 0, 0.15),
+            -4px 4px 4px rgba(0, 0, 0, 0.15),
+            4px -4px 4px rgba(0, 0, 0, 0.15),
+            -4px -4px 4px rgba(0, 0, 0, 0.15);
+    /*text-shadow:*/
+    /*    8px 8px 8px rgba(0, 0, 0, 0.25),*/
+    /*    -8px 8px 8px rgba(0, 0, 0, 0.25),*/
+    /*    8px -8px 8px rgba(0, 0, 0, 0.25),*/
+    /*    -8px -8px 8px rgba(0, 0, 0, 0.25);*/
 }
 /*Про нас*/
 .main__about {
