@@ -282,9 +282,10 @@ ul {
     line-height: 24px;
     letter-spacing: 0.03em;
     color: #757575;
+    text-align: justify;
 }
 
-/*Чим займаємось*/
+/*Чим займаємося*/
 .main__about__title__job {
     margin: 0 0 50px;
     font-style: normal;
