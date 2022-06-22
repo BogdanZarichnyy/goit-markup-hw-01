@@ -13,6 +13,16 @@ body {
     -moz-box-sizing: inherit;
 }
 
+a {
+    text-decoration: none;
+    /*cursor: pointer;*/
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
 .body__general {
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -27,29 +37,21 @@ body {
 }
 
 .container__content {
-    max-width: 1170px;
+    /*max-width: 1170px;*/
+    max-width: 1200px;
     margin: 0 auto;
 }
 
-a {
-    text-decoration: none;
-    /*cursor: pointer;*/
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-/*Шапка*/
+/*Хедер*/
 .header__content {
-    background: #FFFFFF;
+    background-color: #FFFFFF;
     border-bottom: 1px solid #ECECEC;
 }
 
 .header__box {
     display: flex;
     height: 80px;
+    padding: 0 15px;
     justify-content: space-between;
     align-items: center;
 }
@@ -138,26 +140,22 @@ ul {
     color: #2196F3;
 }
 
-/*Контент*/
-.main__box {
-    background: #FFFFFF;
+/*Заказы*/
+.section__order {
+    background-color: #2F303A;
 }
 
-/*Замовлення*/
-.main__content {
-    background: #2F303A;
-}
-
-.main__order {
+.order__content {
     display: flex;
     height: 600px;
+    padding: 0 15px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     row-gap: 30px;
 }
 
-.main__order__title {
+.order__title {
     margin: 0;
     max-width: 696px;
     font-style: normal;
@@ -170,7 +168,7 @@ ul {
     color: #FFFFFF;
 }
 
-.main__order__button {
+.order__button {
     width: 200px;
     height: 50px;
     /*background: #2196F3;*/
@@ -193,12 +191,12 @@ ul {
     cursor: pointer;
 }
 
-.main__order__button:focus {
+.order__button:focus {
     background: #188ce8;
     color: #FFFFFF;
 }
 
-.main__order__button:active {
+.order__button:active {
     background:
         linear-gradient(#2196F3,
             #104970);
@@ -214,52 +212,34 @@ ul {
         -4px -4px 4px rgba(0, 0, 0, 0.15);
 }
 
-/*Про нас*/
-.main__about {
-    background: #FFFFFF;
+/*Контент*/
+.main__content {
+    background-color: #FFFFFF;
+}
+
+.section {
     padding: 94px 0;
 }
 
+/*О нас*/
 .main__about__us {
     display: flex;
+    padding: 0 15px;
     flex-direction: column;
     align-items: center;
     row-gap: 94px;
 }
 
-.main__about__box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.main__about__title {
-    margin: 0;
+.main__title {
     display: none;
 }
 
-.main__about__list {
+.box__list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
     margin: 0;
-}
-
-.main__about__list__item__box {
-    max-width: 370px;
-    /*max-height: 294px;*/
-    cursor: pointer;
-    transition: all 0.5s;
-}
-
-.main__about__list__item__box:hover {
-    transform: scale(1.1);
-}
-
-.main__about__list__item__box__image {
-    display: block;
-    width: 100%;
 }
 
 .main__about__list__item {
@@ -285,7 +265,7 @@ ul {
     text-align: justify;
 }
 
-/*Чим займаємося*/
+/*Чем мы занимаемся*/
 .main__about__title__job {
     margin: 0 0 50px;
     font-style: normal;
@@ -296,16 +276,31 @@ ul {
     letter-spacing: 0.03em;
 }
 
+.main__about__list__item__job {
+    max-width: 370px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.main__about__list__item__job:hover {
+    transform: scale(1.1);
+}
+
+.box__image {
+    display: block;
+    width: 100%;
+}
+
 /*Наша команда*/
-.main__team__box {
-    background: #F5F4FA;
+.team__content {
+    background-color: #F5F4FA;
 }
 
-.main__team {
-    padding: 94px 0;
+.team__box {
+    padding: 0 15px;
 }
 
-.main__team__title {
+.team__title {
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
@@ -315,18 +310,10 @@ ul {
     margin: 0 auto 50px;
 }
 
-.main__team__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
-    margin: 0;
-}
-
-.main__team__list__item {
+.team__list__item {
     max-width: 270px;
     /*height: 368px;*/
-    background: #FFFFFF;
+    background-color: #FFFFFF;
     box-shadow:
         0 1px 3px rgba(0, 0, 0, 0.12),
         0 1px 1px rgba(0, 0, 0, 0.14),
@@ -336,16 +323,11 @@ ul {
     transition: all 0.5s;
 }
 
-.main__team__list__item:hover {
+.team__list__item:hover {
     transform: scale(1.1);
 }
 
-.main__team__list__item__photo {
-    display: block;
-    width: 100%;
-}
-
-.main__team__list__item__name {
+.team__list__item__name {
     margin: 30px auto 5px;
     font-style: normal;
     /*font-weight: 500;*/
@@ -356,7 +338,7 @@ ul {
     color: #212121;
 }
 
-.main__team__list__item__job {
+.team__list__item__job {
     margin: 5px auto 30px;
     font-style: normal;
     font-weight: 400;
@@ -367,14 +349,15 @@ ul {
     color: #757575;
 }
 
-/*Підвал*/
+/*Футер*/
 .footer__content {
-    background: #2F303A;
+    background-color: #2F303A;
 }
 
 .footer__box {
     display: flex;
     height: 252px;
+    padding: 0 15px;
     align-items: center;
     justify-content: space-between;
 }
