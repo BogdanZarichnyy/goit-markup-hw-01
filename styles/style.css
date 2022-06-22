@@ -42,7 +42,7 @@ ul {
     margin: 0 auto;
 }
 
-/*Хедер*/
+/*Шапка*/
 .header__content {
     background-color: #FFFFFF;
     border-bottom: 1px solid #ECECEC;
@@ -140,7 +140,7 @@ ul {
     color: #2196F3;
 }
 
-/*Заказы*/
+/*Замовлення*/
 .section__order {
     background-color: #2F303A;
 }
@@ -221,7 +221,7 @@ ul {
     padding: 94px 0;
 }
 
-/*О нас*/
+/*Про нас*/
 .main__about__us {
     display: flex;
     padding: 0 15px;
@@ -265,7 +265,7 @@ ul {
     text-align: justify;
 }
 
-/*Чем мы занимаемся*/
+/*Чим ми займаємося*/
 .main__about__title__job {
     margin: 0 0 50px;
     font-style: normal;
@@ -349,7 +349,7 @@ ul {
     color: #757575;
 }
 
-/*Футер*/
+/*Підвал*/
 .footer__content {
     background-color: #2F303A;
 }
